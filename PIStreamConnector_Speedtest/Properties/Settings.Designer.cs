@@ -34,7 +34,16 @@ namespace PIStreamConnector_Speedtest.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rpalmen\\OneDrive\\Desktop\\PI streaming 2016\\TestIO")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public int PIDataPipe_MaxEventCountPerServer {
+            get {
+                return ((int)(this["PIDataPipe_MaxEventCountPerServer"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rpalmen\\OneDrive\\Desktop\\PI streaming 2016")]
         public string PIPoints_filepath {
             get {
                 return ((string)(this["PIPoints_filepath"]));
@@ -43,10 +52,19 @@ namespace PIStreamConnector_Speedtest.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
-        public int PIDataPipe_MaxEventCountPerServer {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DisableProcessing {
             get {
-                return ((int)(this["PIDataPipe_MaxEventCountPerServer"]));
+                return ((bool)(this["DisableProcessing"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("PI2016light")]
+        public string PIServerName {
+            get {
+                return ((string)(this["PIServerName"]));
             }
         }
     }

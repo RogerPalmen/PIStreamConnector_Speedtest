@@ -5,11 +5,17 @@
     <Setting Name="PIPoints_filename" Type="System.String" Scope="Application">
       <Value Profile="(Default)">ListPiTags_Stream1K.txt</Value>
     </Setting>
-    <Setting Name="PIPoints_filepath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">C:\Users\rpalmen\OneDrive\Desktop\PI streaming 2016\TestIO</Value>
-    </Setting>
     <Setting Name="PIDataPipe_MaxEventCountPerServer" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="PIPoints_filepath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\rpalmen\OneDrive\Desktop\PI streaming 2016</Value>
+    </Setting>
+    <Setting Name="DisableProcessing" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PIServerName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PI2016light</Value>
     </Setting>
   </Settings>
 </SettingsFile>
