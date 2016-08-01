@@ -25,28 +25,10 @@ namespace PIStreamConnector_Speedtest.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ListPiTags_Stream1K.txt")]
-        public string PIPoints_filename {
-            get {
-                return ((string)(this["PIPoints_filename"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("10000")]
-        public int PIDataPipe_MaxEventCountPerServer {
+        public int PIDataPipe_blockSize {
             get {
-                return ((int)(this["PIDataPipe_MaxEventCountPerServer"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rpalmen\\OneDrive\\Desktop\\PI streaming 2016")]
-        public string PIPoints_filepath {
-            get {
-                return ((string)(this["PIPoints_filepath"]));
+                return ((int)(this["PIDataPipe_blockSize"]));
             }
         }
         
@@ -65,6 +47,33 @@ namespace PIStreamConnector_Speedtest.Properties {
         public string PIServerName {
             get {
                 return ((string)(this["PIServerName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ListPiTags_Stream1K.txt")]
+        public string PIPoints_filename {
+            get {
+                return ((string)(this["PIPoints_filename"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\rpalmen\\OneDrive\\Desktop\\PI streaming 2016\\TestIO")]
+        public string PIPoints_filepath {
+            get {
+                return ((string)(this["PIPoints_filepath"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000000")]
+        public int PIDataPipe_maxAsyncBlockSize {
+            get {
+                return ((int)(this["PIDataPipe_maxAsyncBlockSize"]));
             }
         }
     }
